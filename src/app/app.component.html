@@ -1,0 +1,10 @@
+<div class="row columns">
+  <button id="loginB" (click)="login()" *ngIf="!(user | async)?.uid">Login</button>
+  <button id="logoutB" (click)="logout()" *ngIf="(user | async)?.uid">Logout</button>
+  <input type="text" id="message" *ngIf="(user | async)?.uid" placeholder="Hello {{ name }}, type your message here..." (keyup.enter)="Send($event.target.value)" [(ngModel)]="msgVal" />
+  <div class="chat-container" *ngFor="let item of items | async">
+      <h2 class="name {{ getRandomClass() }}">{{name}}</h2>
+      
+      <p>{{item.message}}<span class="delete" *ngIf="isUser(item, sessionID)" (click)="deleteMsg(item, item.$key)">x</span></p>
+  </div>
+</div>

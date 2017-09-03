@@ -1,0 +1,64 @@
+.columns {
+    justify-content: flex-end;
+}
+#loginB {
+    background: none;
+    border: 1px solid #536DFE;
+    transition: background .6s ease-in-out;
+}
+#loginB:hover {
+    background: #536DFE;
+    transition: background .6s ease-in-out;
+}
+#logoutB {
+    background: none;
+    border: 1px solid #FF1744;
+    transition: background .6s ease-in-out;
+}
+#logoutB:hover {
+    background: #FF1744;
+    transition: background .6s ease-in-out;
+}
+input#message {
+    background:none;
+    border:none;
+    border-bottom: 1px solid #4C4C4C;
+    outline:none;
+    box-shadow:none;
+    color: white;
+    font-size:1.6em;
+    font-weight:300;
+    margin-bottom: 3em;
+    padding:1.2em 0;
+}
+.chat-container {
+    display:block;
+    width:100%;
+}
+.chat-container:nth-child(4) {
+    opacity: .8;
+}
+.chat-container:nth-child(3) {
+    opacity: .6;
+}
+.chat-container:nth-child(2) {
+    opacity: .4;
+}
+.chat-container h2 {
+    text-transform: uppercase;
+    font-weight:bold;
+    /* color:#816A98; */
+    color: #3D5AFE;
+    font-size:.8em;
+    letter-spacing:2px;
+}
+.chat-container p {
+    background:#323035;
+    padding:1.1em;
+    color:white;
+    margin: 5px 0 10px 0;
+}
+.chat-container .delete {
+    float: right;
+    cursor: pointer;
+}

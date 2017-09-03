@@ -1,0 +1,17 @@
+body {
+    background-color:#242226;
+    padding-top: 5em;
+}
+* {
+    font-family: 'Inconsolata', monospace;
+}
+button {
+    font-family: 'Inconsolata', monospace;
+    color:white;
+    padding: 1.2em;
+    width:200px;
+    text-align:center;
+    font-size:1.2em;
+    margin-bottom: 30px;
+    cursor:pointer;
+}
